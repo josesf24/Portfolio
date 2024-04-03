@@ -1,0 +1,149 @@
+body {
+    /*background-color: #02111B; /* Dark background color */
+    background: radial-gradient(circle, rgba(2,41,66,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+    color: #FCFCFC; /* White text color */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire body */
+    zoom: 1.7; /* Scale the body content to 1.2 times its original size */
+    flex-direction: column;
+
+}
+
+footer {
+    position: flex; /* Position the footer absolutely */
+    bottom: 0; /* Align the footer to the bottom of the body */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    color: white; /* Text color */
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background-color: #50161F; /* Slightly darker background color */
+    border-radius: 30px;
+    width: 550px;
+    margin: 30px;
+    position: relative; /* Add position relative */
+    animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation to main_box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to main_box */
+    flex-grow: 1;
+
+}
+
+#pic_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pic_name img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation to image */
+
+}
+
+#buttons_cta {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+}
+
+#buttons_cta button {
+    margin: 5px 0;
+}
+
+#description_media {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+#icons {
+    position: absolute; /* Add position absolute */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #300D12; /* Darker background color */
+    padding: 20px 0; /* Remove horizontal padding */
+    border-radius: 0 0 10px 10px; /* Rounded corners only on bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Cover entire width of main_box */
+    margin-top: 200px;
+}
+
+#social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social_media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff; /* White text color */
+}
+
+red{
+    margin: 0 5px;
+    color: #000; /* White text color */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #444; /* Darker background color */
+}
+
+
+.fa {
+    margin: 0 5px;
+    color: #fff; /* White text color */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #444; /* Darker background color */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set specific colors for each brand */
+.fa-linkedin {
+    background: #0a66c2; /* LinkedIn color */
+}
+
+.fa-github {
+    background: #24292e; /* GitHub color */
+}
+
+.fa-google {
+    background: #ea4335; /* Google color */
+}
