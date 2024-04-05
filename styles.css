@@ -8,9 +8,13 @@ body {
     font-size: 20px;
     color: #FCFCFC; /* White text color */
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire body */
-    zoom: 1.7; /* Scale the body content to 1.2 times its original size */
+    zoom: 1.9; /* Scale the body content to 1.2 times its original size */
     flex-direction: column;
 
+}
+
+#pic_name h1{
+    font-family: system-ui;
 }
 
 footer {
@@ -37,7 +41,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px;
+    padding: 0px;
     background-color: #50161F; /* Slightly darker background color */
     border-radius: 30px;
     width: 550px;
@@ -46,13 +50,13 @@ footer {
     animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation to main_box */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to main_box */
     flex-grow: 1;
-
 }
 
 #pic_name {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 40px;
 }
 
 #pic_name img {
@@ -63,15 +67,20 @@ footer {
 
 }
 
+#short_description {
+    padding: 0px 82px;
+       
+}
+
 #buttons_cta {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: 200px;
+    margin-bottom: 20px;
 }
 
-#buttons_cta button {
+#buttons_cta a {
     margin: 5px 0;
     text-align: left;
     font-size: 20px;
@@ -83,9 +92,19 @@ footer {
 
 
 #description_media {
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 1px;
+    margin-top: 10px;
     text-align: center;
+}
+#description_media p{
+    margin-bottom: 0;
+}
+
+#interest{
+    font-family: system-ui;
+}
+#interest-terms{
+    margin-bottom: 5px;
 }
 
 .btn{
@@ -95,8 +114,8 @@ footer {
 
 
 
+
 #icons {
-    position: absolute; /* Add position absolute */
     bottom: 0;
     left: 0;
     right: 0;
@@ -107,7 +126,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%; /* Cover entire width of main_box */
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 #social_media {
@@ -146,7 +165,8 @@ red{
 
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+    transform: scale(1.1); /* Increase the size by 10% */
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
 
 /* Set specific colors for each brand */
@@ -160,4 +180,64 @@ red{
 
 .fa-google {
     background: #ea4335; /* Google color */
+}
+
+
+
+
+.button {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    justify-content: space-between;
+    font-size: 100px;
+    background-color:#300D12; /* Green color */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button svg {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.button:hover span,
+.button:hover svg {
+    color: #000000; /* Cambiado a negro */
+    
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* Add animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-button {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.span_buttons {
+    font-size: 20px;
 }
