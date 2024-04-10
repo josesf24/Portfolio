@@ -14,7 +14,7 @@ body {
 }
 
 #pic_name h1{
-    font-family: system-ui;
+    font-family: "Righteous", sans-serif;
 }
 
 footer {
@@ -42,14 +42,20 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    background-color: #50161F; /* Slightly darker background color */
-    border-radius: 30px;
+    /*background-color: #50161F; /* Slightly darker background color */
+    background: rgb(70,9,18);
+    background: linear-gradient(0deg, rgba(70,9,18,1) 0%, rgba(39,11,34,1) 50%, rgba(2,0,36,1) 100%);        
+    
+
+
     width: 550px;
     margin: 30px;
     position: relative; /* Add position relative */
     animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation to main_box */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to main_box */
     flex-grow: 1;
+    border-radius: 13px; /* Rounded corners only on bottom */
+
 }
 
 #pic_name {
@@ -69,7 +75,10 @@ footer {
 
 #short_description {
     padding: 0px 82px;
-       
+}
+
+#short_description p {
+    text-align: center;
 }
 
 #buttons_cta {
@@ -86,6 +95,9 @@ footer {
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 12px;
+    border:#FCFCFC solid 2px;
+
 }
 
 
@@ -101,7 +113,7 @@ footer {
 }
 
 #interest{
-    font-family: system-ui;
+    font-family: "Rowdies", sans-serif;;
 }
 #interest-terms{
     margin-bottom: 5px;
@@ -156,7 +168,7 @@ red{
     margin: 0 5px;
     color: #fff; /* White text color */
     padding: 20px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -193,7 +205,6 @@ red{
     color: #ffffff;
     justify-content: space-between;
     font-size: 100px;
-    background-color:#300D12; /* Green color */
     border: none;
     border-radius: 3px;
     padding: 10px 20px;
